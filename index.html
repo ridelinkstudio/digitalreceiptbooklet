@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090806">
+  <meta name="description" content="Give your business a more professional way to create, download and share digital receipts. Get the RideLink Digital Receipt Booklet by XTC Studio.">
+  <meta property="og:title" content="RideLink Digital Receipt Booklet | Smarter Business Records">
+  <meta property="og:description" content="Create professional digital receipts, download PDFs and share them with customers on WhatsApp.">
+  <meta property="og:image" content="assets/ridelink-digital-receipt-booklet.jpg">
+  <title>RideLink Digital Receipt Booklet | Smarter Business Records</title>
+  <style>
+    :root {
+      --bg:#090806; --panel:#15120d; --panel2:#1c170e; --gold:#f5bd32;
+      --gold2:#ffdf83; --text:#fffdf7; --muted:#c7bda9; --line:rgba(245,189,50,.28);
+      --green:#20b85a; --max:1160px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 85% 0%,#3a260b 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.6}
+    a{color:inherit}
+    .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}
+    .topbar{border-bottom:1px solid var(--line);background:rgba(7,6,4,.82)}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:900;font-size:1.65rem;letter-spacing:-1.4px;text-decoration:none;font-style:italic}
+    .brand span{color:var(--gold)}
+    .brand small{display:block;font-size:.66rem;letter-spacing:1.6px;color:var(--muted);font-style:normal;font-weight:700;margin-top:-7px}
+    .navlink{color:var(--gold2);font-weight:800;text-decoration:none;font-size:.94rem}
+    .hero{padding:70px 0 64px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-weight:800;text-transform:uppercase;letter-spacing:1.8px;font-size:.76rem}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}
+    h1{font-size:clamp(2.55rem,5.5vw,4.7rem);line-height:1.02;letter-spacing:-2.5px;margin:20px 0}
+    h1 em{color:var(--gold);font-style:normal}
+    .lead{font-size:1.14rem;color:#e1d8c8;max-width:590px;margin:0 0 27px}
+    .actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:15px 23px;border-radius:999px;font-weight:900;text-decoration:none;transition:.2s;min-height:54px}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+    .primary{background:linear-gradient(110deg,#ffe18a,#e6a900);color:#171006;box-shadow:0 9px 30px #e5a90030}
+    .secondary{border:1px solid var(--line);color:var(--gold2);background:#ffffff08}
+    .micro{font-size:.82rem;color:var(--muted);margin-top:15px}
+    .hero-art{position:relative}
+    .hero-art:before{content:"";position:absolute;inset:8% -7% -5% 12%;background:#e5a90024;filter:blur(55px);border-radius:50%}
+    .hero-art img{position:relative;width:100%;height:auto;display:block;border:1px solid #b98c2d;border-radius:18px;box-shadow:0 24px 80px #000b}
+    .trustline{display:flex;flex-wrap:wrap;gap:18px;margin-top:28px;color:#e9dfcd;font-size:.88rem}
+    .trustline span:before{content:"✓";color:var(--gold);font-weight:900;margin-right:7px}
+    section{padding:72px 0}
+    .section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+    .kicker{color:var(--gold);font-size:.76rem;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+    h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;letter-spacing:-1.3px;margin:12px 0}
+    .section-head p{color:var(--muted);font-size:1.04rem;margin:12px auto 0}
+    .features{background:linear-gradient(180deg,#100d08,#0c0a07)}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .card{background:linear-gradient(145deg,#20190e,#110f0b);border:1px solid var(--line);border-radius:17px;padding:24px}
+    .ico{width:47px;height:47px;display:grid;place-items:center;border-radius:13px;background:#f5bd321a;color:var(--gold);font-size:1.45rem;margin-bottom:15px}
+    .card h3{font-size:1.08rem;margin:0 0 7px}
+    .card p{color:var(--muted);font-size:.94rem;margin:0}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .checklist{list-style:none;padding:0;margin:24px 0}
+    .checklist li{padding:11px 0;border-bottom:1px solid #ffffff12;color:#eee5d6}
+    .checklist li:before{content:"✓";color:var(--gold);font-weight:900;margin-right:12px}
+    .callout{border:1px solid var(--line);border-radius:22px;background:linear-gradient(140deg,#261c0c,#110e09);padding:30px}
+    .callout strong{color:var(--gold2)}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:step}
+    .step{padding:24px;border-radius:16px;border:1px solid var(--line);background:#ffffff06}
+    .step:before{counter-increment:step;content:"0" counter(step);display:block;color:var(--gold);font-size:1.7rem;font-weight:900;margin-bottom:12px}
+    .step h3{margin:0 0 7px}.step p{margin:0;color:var(--muted);font-size:.94rem}
+    .audience{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    .tag{padding:10px 16px;border:1px solid var(--line);border-radius:999px;color:#f4e7c9;background:#ffffff06;font-size:.9rem}
+    .faq{max-width:850px;margin:auto}
+    details{padding:18px 2px;border-bottom:1px solid var(--line)}
+    summary{font-weight:800;cursor:pointer;color:#fff3d5}
+    details p{color:var(--muted);margin:12px 0 0}
+    .final-cta{padding:70px 0;background:radial-gradient(ellipse at 50% 100%,#5a3a0b66,transparent 65%)}
+    .cta-box{text-align:center;border:1px solid #d5a52f80;border-radius:25px;padding:48px 25px;background:linear-gradient(135deg,#211808,#100d08);box-shadow:0 20px 70px #0008}
+    .cta-box p{color:var(--muted);max-width:650px;margin:14px auto 25px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:.86rem}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .foot a{color:var(--gold2);text-decoration:none}
+    .float-wa{position:fixed;right:18px;bottom:18px;z-index:10;background:var(--green);color:white;text-decoration:none;font-weight:900;padding:13px 18px;border-radius:999px;box-shadow:0 8px 25px #0009}
+    @media(max-width:850px){.hero-grid,.split{grid-template-columns:1fr}.hero{padding-top:46px}.hero-art{max-width:620px;margin:0 auto}.cards{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:1fr}.hero-grid{gap:30px}}
+    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{min-height:66px}.brand{font-size:1.4rem}.navlink{font-size:.82rem}.hero{padding:38px 0 45px}h1{letter-spacing:-1.5px}.lead{font-size:1.02rem}.cards{grid-template-columns:1fr}section{padding:55px 0}.cta-box{padding:35px 18px}.float-wa{right:12px;bottom:12px;padding:11px 15px;font-size:.88rem}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#" aria-label="RideLink home">Ride<span>Link</span><small>DIGITAL RECEIPT BOOKLET</small></a>
+      <a class="navlink" href="#features">Explore the features ↓</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Smarter tools for modern businesses</div>
+          <h1>Your business deserves more than a <em>paper receipt.</em></h1>
+          <p class="lead">Give every transaction a more professional touch. Create digital receipts, download them as PDFs and share them with customers — all from a convenient business booklet.</p>
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/2347036732460?text=Hello%2C%20I%27m%20interested%20in%20the%20RideLink%20Digital%20Receipt%20Booklet.%20Please%20send%20me%20the%20details." target="_blank" rel="noopener">Get Started on WhatsApp ↗</a>
+            <a class="btn secondary" href="#how-it-works">See how it works</a>
+          </div>
+          <div class="micro">Personalised for your business • Convenient digital records • Easy customer sharing</div>
+          <div class="trustline"><span>Professional presentation</span><span>Simple workflow</span><span>Made for businesses</span></div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/ridelink-digital-receipt-booklet.jpg" alt="RideLink Digital Receipt Booklet promotional preview showing digital receipt features on a smartphone">
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Everything in one convenient booklet</div>
+          <h2>Make every transaction look more professional.</h2>
+          <p>Move beyond handwritten slips and scattered records with a digital receipt tool designed to make everyday business transactions easier to manage.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="ico">▤</div><h3>Professional Digital Receipts</h3><p>Create neat, customer-ready receipts that give your business a more organised and credible presentation.</p></article>
+          <article class="card"><div class="ico">⚙</div><h3>Your Business Identity</h3><p>Add your business name, logo and relevant details so your receipts carry your own business identity.</p></article>
+          <article class="card"><div class="ico">#</div><h3>Automatic Numbering</h3><p>Keep transactions in sequence with automatic receipt numbering for easier reference and tracking.</p></article>
+          <article class="card"><div class="ico">⇩</div><h3>Downloadable PDF</h3><p>Save a digital copy of a receipt as a PDF for your records or to share with your customer.</p></article>
+          <article class="card"><div class="ico">◉</div><h3>WhatsApp Sharing</h3><p>Share receipts with customers through WhatsApp, making it convenient to deliver proof of payment.</p></article>
+          <article class="card"><div class="ico">▤</div><h3>Convenient Records</h3><p>Access your receipt history when you need to check previous transactions and business records.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <div class="kicker">A better business experience</div>
+          <h2>Look organised. Serve customers with confidence.</h2>
+          <p class="lead">A receipt is more than a record of payment — it is also part of the experience customers have with your business.</p>
+          <ul class="checklist">
+            <li>Present a consistent business identity.</li>
+            <li>Reduce dependence on handwritten receipts.</li>
+            <li>Keep transaction references easier to follow.</li>
+            <li>Send customers a digital copy they can keep.</li>
+            <li>Make everyday record-keeping more convenient.</li>
+          </ul>
+          <a class="btn primary" href="https://wa.me/2347036732460?text=Hello%2C%20I%20want%20to%20upgrade%20my%20business%20with%20the%20RideLink%20Digital%20Receipt%20Booklet." target="_blank" rel="noopener">Upgrade Your Business ↗</a>
+        </div>
+        <div class="callout">
+          <div class="kicker">Designed around your business</div>
+          <h2>Not just a generic receipt template.</h2>
+          <p>RideLink Digital Receipt Booklet can be set up with your business details to give your receipt system a more personal and professional feel.</p>
+          <p><strong>Your business name. Your details. Your transactions.</strong></p>
+          <p>Contact XTC Studio to discuss setup and the options available for your business.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="how-it-works">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Simple to get started</div>
+          <h2>How it works</h2>
+          <p>Get your business details ready and let us help you get your digital booklet set up.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><h3>Tell us about your business</h3><p>Send your business name, logo and the details you want displayed on your receipts.</p></article>
+          <article class="step"><h3>Get your personalised booklet</h3><p>We prepare your RideLink Digital Receipt Booklet with your business information.</p></article>
+          <article class="step"><h3>Create and share receipts</h3><p>Use your booklet to prepare receipts, download PDF copies and share them with customers.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Who can use it?</div>
+          <h2>Useful for businesses across different industries.</h2>
+          <p>Whether you provide a service or sell products, a clear digital receipt can help make transactions easier to document.</p>
+        </div>
+        <div class="audience">
+          <span class="tag">Transport &amp; Drivers</span><span class="tag">Retail Shops</span><span class="tag">Food &amp; Catering</span>
+          <span class="tag">Repairs &amp; Maintenance</span><span class="tag">Beauty &amp; Fashion</span><span class="tag">Freelancers</span>
+          <span class="tag">Small Businesses</span><span class="tag">Service Providers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="kicker">Frequently asked questions</div>
+          <h2>Good to know before you get started.</h2>
+        </div>
+        <div class="faq">
+          <details><summary>Is the booklet only for drivers?</summary><p>No. It can be useful for drivers, shops, service providers and many other small businesses that issue receipts to customers.</p></details>
+          <details><summary>Can my business name and logo appear on the receipts?</summary><p>Yes. The booklet can be personalised with your business identity and relevant details. Send your information to discuss your setup.</p></details>
+          <details><summary>Can I send receipts to customers on WhatsApp?</summary><p>Yes. The booklet is designed to make it convenient to share receipts with customers through WhatsApp.</p></details>
+          <details><summary>Can I keep a copy of each receipt?</summary><p>You can download receipts as PDF files and use the booklet's receipt history to refer to previous transactions.</p></details>
+          <details><summary>How much does it cost?</summary><p>Pricing and setup depend on the option suitable for your business. Contact XTC Studio on WhatsApp for current details.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="wrap">
+        <div class="cta-box">
+          <div class="kicker">RideLink Digital Receipt Booklet by XTC Studio</div>
+          <h2>Give your business the upgrade it deserves.</h2>
+          <p>Make your receipts look professional, keep your transactions organised and give customers a convenient digital record. Get in touch to get started.</p>
+          <a class="btn primary" href="https://wa.me/2347036732460?text=Hello%20XTC%20Studio%2C%20I%27m%20ready%20to%20get%20the%20RideLink%20Digital%20Receipt%20Booklet.%20Please%20guide%20me." target="_blank" rel="noopener">Chat with Us on WhatsApp ↗</a>
+          <div class="micro">WhatsApp: 0703 673 2460</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div><strong style="color:#fff">RideLink</strong> · Smarter Business. Greater Success.</div>
+      <div>Digital Receipt Booklet by <a href="https://www.facebook.com/xtcweb" target="_blank" rel="noopener">XTC Studio</a></div>
+      <div>© <span id="year"></span> RideLink. All rights reserved.</div>
+    </div>
+  </footer>
+  <a class="float-wa" href="https://wa.me/2347036732460?text=Hello%2C%20please%20tell%20me%20more%20about%20the%20RideLink%20Digital%20Receipt%20Booklet." target="_blank" rel="noopener" aria-label="Chat with RideLink on WhatsApp">☏ WhatsApp</a>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
